@@ -1,0 +1,581 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(138, 138, 19); */
+    padding-top: 0.1px;
+
+}
+
+#main nav {
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+nav h1 {
+    /* background-color: blue; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Shojumaru", system-ui;
+    letter-spacing: -2.5px;
+}
+
+nav h1::after {
+    content: '👑';
+    font-family: sans-serif;
+    position: absolute;
+    rotate: -30deg;
+    left: 5.9%;
+    /* right: 1%; */
+    font-size: 1.5vw;
+    bottom: 60%;
+}
+
+nav h1::before {
+    content: "Shippuden";
+    font-family: "Shojumaru", system-ui;
+    bottom: 15%;
+    position: absolute;
+    font-size: 1vw;
+    letter-spacing: 0;
+    font-weight: 525;
+    left: 15%;
+    color: rgb(76, 76, 76);
+}
+
+
+nav h2 {
+    /* background-color: blue; */
+    height: 100%;
+    width: 23%;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Shojumaru", system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+
+
+
+nav h2:nth-last-child(2) {
+    width: 29%;
+}
+
+
+nav h2:nth-last-child(1) {
+    width: 10%;
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 45%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    padding: 2.3vw;
+}
+
+#overlay1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#overlay1 h1 {
+    font-size: 3.3vw;
+    font-weight: 560;
+    /* letter-spacing:-5; */
+    font-family: monument;
+    color: white;
+    line-height: 4vw;
+    /* mix-blend-mode:darken; */
+}
+
+#overlay1 h2 {
+    font-size: 3vw;
+    font-weight: 560;
+    padding-top: 4vw;
+}
+
+
+#overlay2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: 1vw 0;
+}
+
+
+#overlay2 h2 {
+    /* margin-top:0.3vw; */
+    color: white;
+    font-size: 2vw;
+    font-weight: 465;
+}
+
+#overlay2 img {
+    height: 3vw;
+}
+
+.nh:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav h2 i {
+    font-family: "Shojumaru", system-ui;
+    font-size: 1.5vw;
+    transition: transform 0.1s;
+}
+
+nav h2 i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#marquee {
+    width: 100%;
+    height: 6vh;
+    padding: 2vw;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+#marquee img{
+    padding-top:1vw;
+    padding-left:1vw;
+    height:4.4vw;
+    width: 4.4vw;
+}
+
+#marquee .marqueeContainer h3 {
+    font-size: 2.7vw;
+    font-family: "Luckiest Guy", cursive;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: transparent;
+    display: inline-block;
+    margin-left: 25.4px;
+    align-items: center;
+}
+
+#marquee .marqueeContainer {
+    width: fit-content;
+    display: inline-block;
+    white-space: nowrap;
+    animation: anima 15s linear infinite;
+
+}
+
+@keyframes anima {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#scroll {
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+    padding-top: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    /* background-color: blue; */
+    padding: 1.5vw;
+    animation: naruto 8s infinite linear;
+}
+
+#container img {
+    /* display: none; */
+    height: 88%;
+    width: 11%;
+    border-radius: 50%;
+    margin: 1.8vw;
+    padding: 0.3vw;
+  
+}
+
+ @keyframes naruto {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#uchiha-clan{
+    position: relative;
+}
+
+#uchiha-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh; 
+    padding-top:12vw;
+}
+
+#uchiha-image img {
+    height: 35vw;
+    width: 20vw;
+    filter: drop-shadow(8px 8px 8px black);
+    opacity: 0.95;
+    /* background-color: blue; */
+}
+
+#uchiha-clan h1{
+    position:absolute;
+    top:70%;
+    left:38%;
+    font-size: 5vw;
+    z-index: 1;
+    color:black;
+    font-family: "Nosifer", sans-serif;
+}
+
+.aside {
+    width:100%;
+    height:110vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.aside .aside-left{
+    width:50%;
+    height: 100%;
+    /* background-color:aqua; */
+    position: relative;
+}
+
+.aside .aside-left h1{
+    position:absolute;
+    text-transform: uppercase;
+    bottom:11.7%;
+    left:7.5%;
+    font-size:1.6vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    font-family: monument;
+    font-weight:550;
+
+}
+
+.aside .aside-left img{
+    width:55%;
+    height: 90vh;
+}
+
+.aside-right{
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3vw;
+    line-break:anywhere;
+    /* background-color: beige; */
+    /* padding:2vw; */
+}
+
+.aside-right h4{
+    font-size: 2vw;
+    /* font-family: "Changa", sans-serif; */
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-weight: 200;
+
+}
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2vw 6vw 2vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #page3 .circularText {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #page3 .imgContainer {
+    height: 100%;
+    width: 64%;
+    background-color: aqua;
+    background-image: url(https://wallpaperaccess.com/full/152530.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #page3 .circularText .images {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #page3 .circularText .images .circleAnimation {
+    animation: anime 10s linear infinite;
+    mix-blend-mode: multiply;
+  }
+  #page3 .circularText .images .arrows {
+    position: absolute;
+    mix-blend-mode: difference;
+  }
+  @keyframes anime {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #page3 .circularText .textContainer h6 {
+    font-size: 1.8vw;
+    font-weight: 100;
+  }
+  .imgSection {
+    width: 100%;
+    height: 100vh;
+    padding: 3vw 6vw;
+  }
+  .imgSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  #page4{
+    height: 100%;
+    width:100%;
+    /* background-color: black; */
+    position: relative;
+    padding:3vw 2vw;
+  }
+
+  #page4>h1{
+     text-align: center;
+     text-transform: uppercase;
+      font-family: "Ranchers", sans-serif;
+     font-size: 2.8vw;
+     font-weight: 400;
+     margin-bottom: 2vw;
+    
+  }
+
+  .elem{
+    height: 11vh;
+    width:100%;
+    /* background-color: aqua; */
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    position: relative;
+    padding:0 2vw;
+  }
+
+  .elem h1{
+    font-size: 1.5vw;
+    font-weight: 550;
+    font-family: monument;
+  }
+
+  .elem h4{
+    font-size: 1vw;
+    font-weight: 400;
+    width:10%;
+  }
+
+  .elem h5{
+    font-size:0.8vw;
+    font-weight: 500;
+  }
+
+  .elem-part2{
+    width:45%;
+  }
+
+  .elem:nth-of-type(1){
+    border-top:2px solid black;
+  }
+
+  .elem  img{
+    position: absolute;
+    left: -12%;
+    width: 10vw;
+    height: 18vh;
+    object-fit:cover;
+    object-position:center;
+    border-radius: 20%;
+    opacity: 0;
+    transition: all ease 0.3s;
+    z-index: 99;
+      
+
+  }
+
+  .elem:hover img {
+    opacity: 1;
+    left: 18%;
+  }
+
+  .elem:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  footer {
+    width: 100%;
+    height: 40vh;
+    border-top: 2px solid black;
+    margin-top: 35px;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+  }
+  footer h1 {
+    width: 30%;
+    padding: 2vw 6vw;
+    /* font-family: monument; */
+    font-family: "Shojumaru", system-ui;
+    position: relative;
+  }
+  footer h2:nth-child(2) {
+    font-family: "Shojumaru", system-ui;;
+    width: 20%;
+    padding: 2vw 6vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer h2:nth-child(3) {
+    font-family: "Shojumaru", system-ui;;
+    width: 20%;
+    padding: 2vw 2vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer div {
+    width: 30%;
+  }
+  footer div h2 {
+    border-bottom: 2px solid black;
+    /* margin-top: 2vw;      */
+    font-family: "Shojumaru", system-ui;;
+    padding: 2vw;
+    font-weight: 400;
+    text-align: center;
+  }
+  footer div p {
+    /* padding: 2vw; */
+    padding-top: 1vw;
+    /* padding-left: 3vw; */
+  }
+  footer h1::after {
+    content: "👑";
+    font-family: sans-serif;
+    position: absolute;
+    rotate: -30deg;
+    left:13%;
+    right: 40%;
+    font-size: 1.38vw;
+    top: -10%;
+  }
+  footer h1::before {
+    content: "shippuden";
+    font-family: "Shojumaru", system-ui;;
+    top: 18%;
+    position: absolute;
+    font-size: 1vw;
+    letter-spacing: 0;
+    font-weight: 400;
+    right: 35%;
+    color: rgb(76, 76, 76);
+  }
+  .icons {
+    width: 100%;
+    padding-left: 3vw;
+    margin-top: 1vw;
+  }
+  .icons i {
+    font-size: 1.7vw;
+    margin-right: 1vw;
+  }
+  
+  .icons p{
+    font-family: "Shojumaru", system-ui;
+    font-size: 0.8vw;
+  }
