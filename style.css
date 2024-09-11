@@ -5,8 +5,7 @@
     font-family: 'Gilroy';
 }
 
-html,
-body {
+html,body {
     height: 100%;
     width: 100%;
 }
@@ -14,9 +13,7 @@ body {
 #main {
     height: 100%;
     width: 100%;
-    /* background-color: rgb(138, 138, 19); */
     padding-top: 0.1px;
-
 }
 
 #main nav {
