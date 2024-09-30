@@ -101,7 +101,7 @@ nav h2:nth-last-child(1) {
 #content {
     height: 100%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
 }
 
@@ -365,9 +365,9 @@ nav h2 i:hover {
   }
   #page3 .imgContainer {
     height: 100%;
-    width: 64%;
-    background-color: aqua;
-    background-image: url(https://wallpaperaccess.com/full/152530.jpg);
+    width: 40%;
+    /* background-color: aqua; */
+    background-image: url(https://i.pinimg.com/564x/55/cc/7b/55cc7be194e3685a9065e339164d8822.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -396,16 +396,19 @@ nav h2 i:hover {
     }
   }
   #page3 .circularText .textContainer h6 {
-    font-size: 1.8vw;
+    /* width:100%; */
+    font-size: 2vw;
     font-weight: 100;
+    /* margin-left: 5vw; */
   }
+
   .imgSection {
     width: 100%;
     height: 100vh;
     padding: 3vw 6vw;
   }
   .imgSection img {
-    width: 100%;
+    width: 10%;
     height: 100%;
     object-fit: cover;
   }
@@ -576,3 +579,14 @@ nav h2 i:hover {
     font-family: "Shojumaru", system-ui;
     font-size: 0.8vw;
   }
+
+
+  .circleAnimation:hover {
+    transform: scale(1.1) rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+.arrows:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
